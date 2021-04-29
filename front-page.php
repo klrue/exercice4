@@ -24,19 +24,25 @@ get_header();
 				?>
 			</header><!-- .page-header -->
 			<section class="cours">
+			
 			<?php
 			/* Start the Loop */
             $precedent = "XXXXXX";
 			$chaine_bouton_radio = '';
+			
 			//global $tProprieté;
 			while ( have_posts() ) :
 				the_post();
                 convertirTableau($tPropriété);
 				//print_r($tPropriété);
+				
 				if ($tPropriété['typeCours'] != $precedent): 
 					if ("XXXXXX" != $precedent)	: ?>
 						</section>
+						<div id="separateur"></div>
 						<?php if (in_array($precedent, ['Web', 'Jeu', 'Spécifique', 'Image 2d/3d', 'Conception', 'Projet'])) : ?>
+							
+							
 							<section class="ctrl-carrousel">
 								<?php echo $chaine_bouton_radio;
 								$chaine_bouton_radio = '';
