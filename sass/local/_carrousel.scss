@@ -1,9 +1,15 @@
 .carrousel {
+   @include tablet
+   {
     width: 300vw;
     height: 20vh;
     display : flex;
     transition : transform .5s;
     transform : translate(0);
+   }
+   
+   display: none;
+
 
     div {
         display : flex;

@@ -1216,11 +1216,17 @@ Liste des blocs de cours par type_de_cours
 /* local carrousel
 --------------------------------------------- */
 .carrousel {
-  width: 300vw;
-  height: 20vh;
-  display: flex;
-  transition: transform .5s;
-  transform: translate(0);
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .carrousel {
+    width: 300vw;
+    height: 20vh;
+    display: flex;
+    transition: transform .5s;
+    transform: translate(0);
+  }
 }
 
 .carrousel div {
@@ -1568,26 +1574,34 @@ La barre du millieu
 /* local footer
 --------------------------------------------- */
 .site-footer {
-  background-color: #8000ff;
-  display: flex;
-  justify-content: center;
-  width: 30%;
-  text-align: center;
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .site-footer {
+    background-color: #8000ff;
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    text-align: center;
+  }
 }
 
 .site-footer .widget-footer {
-  justify-content: space-between;
-  flex-wrap: wrap;
-  flex-direction: row;
-  display: flex;
-  background-color: white;
-  border: solid #8000ff;
-  width: 60%;
-  padding-right: 3vw;
-  padding-left: 3vw;
+  display: none;
 }
 
-.site-footer .widget-footer .textwidget {
-  text-decoration: none;
+@media (min-width: 800px) {
+  .site-footer .widget-footer {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    background-color: white;
+    border: solid #8000ff;
+    width: 60%;
+    padding-right: 3vw;
+    padding-left: 3vw;
+  }
 }
 /*# sourceMappingURL=style.css.map */
