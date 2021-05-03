@@ -34,4 +34,35 @@
            
         }
     }
+
+    //ajustement des widgets avec la page dans les articles
+    #primary
+    {
+        article
+        {
+            .entry-header
+            {
+                width: 60%;
+            }
+    
+            .entry-content
+            {
+                width: 60%;
+                text-align: justify;
+            }
+    
+            .entry-footer{
+                width: 60%;
+            }
+        }
+        .navigation
+        {
+            width: 60%;
+        }
+
+        #comments
+        {
+            width: 60%;;
+        }
+    }
     

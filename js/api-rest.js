@@ -15,10 +15,10 @@
            console.log(maRequete)
            if (maRequete.status >= 200 && maRequete.status < 400) {
                let data = JSON.parse(maRequete.responseText);
-               chaineResultat = '';
+               let chaineResultat = ''
                for(const elm of data){
-                chaineResultat += '<h2>' + elm.title.rendered + '</h2>';
-                chaineResultat += elm.content.rendered;
+                chaineResultat += '<h2>' + elm.title.rendered + '</h2>'
+                chaineResultat += elm.content.rendered
                }
                nouvelles.innerHTML = chaineResultat;
             }

@@ -74,16 +74,18 @@ get_header();
 <!-- ///////////////////////////////////////////////////////////////////////////// 
      Formulaire d'ajout d'un artcle de catégorie « Nouvelles »   -->
             <section class="admin-rapide">
+				
                 <h3>Ajouter un article de catégorie « Nouvelles »</h3>
                 <input type="text" name="title" placeholder="Titre">
                 <textarea name="content"></textarea>
                 <button id='bout-rapide'>Créer une Nouvelle</button>
+				
             </section>
 <?php endif ?>
 
 		</section>
 			<section class="nouvelles">
-			<button id="bout_nouvelles">Afficher les 3 dernières nouvelles</button>
+			<!--<button id="bout_nouvelles">Afficher les 3 dernières nouvelles</button>-->
 			<section></section>
 			</section>
 
@@ -122,11 +124,11 @@ function class_composant ($typeCours){
 	return 'class="carrousel-2"';
 		}
 	elseif($typeCours == 'Projets'){
-		return 'class="galerie';
+		return 'class="galerie"';
 		
 		}
 	else{
-		return 'class="bloc';
+		return 'class="bloc"';
 	}
 
 }

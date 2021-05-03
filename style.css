@@ -665,7 +665,7 @@ textarea {
 --------------------------------------------------------------*/
 .site {
   display: grid;
-  grid-template-columns: 80% 20%;
+  grid-template-columns: 60% 40%;
   grid-template-areas: "header header" "main sidebar" "footer footer";
 }
 
@@ -715,6 +715,7 @@ textarea {
 .main-navigation {
   display: block;
   width: 100vw;
+  margin-bottom: 10vh;
 }
 
 .main-navigation a:visited {
@@ -1603,6 +1604,27 @@ La barre du millieu
   color: #66fcf1;
 }
 
+#primary article .entry-header {
+  width: 60%;
+}
+
+#primary article .entry-content {
+  width: 60%;
+  text-align: justify;
+}
+
+#primary article .entry-footer {
+  width: 60%;
+}
+
+#primary .navigation {
+  width: 60%;
+}
+
+#primary #comments {
+  width: 60%;
+}
+
 /* local footer
 --------------------------------------------- */
 .site-footer {
@@ -1638,5 +1660,10 @@ La barre du millieu
 
 #bout_nouvelles {
   width: 50%;
+}
+
+.widget-area {
+  width: 40%;
+  background-color: blue;
 }
 /*# sourceMappingURL=style.css.map */
