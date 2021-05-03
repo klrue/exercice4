@@ -1,7 +1,13 @@
 .main-navigation {
 	display: block;
 	width: 100vw;
-	
+
+	 a:visited {
+    color: #c5c6c7;
+	a{
+		color: #c5c6c7;
+	}
+}
 
 	ul {
 		display: none;
@@ -10,9 +16,14 @@
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
-		background-color: #000;
+		background-color: #0B0C10;
 		text-align : left;
 		z-index: 99999;
+		
+		
+
+	
+
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
@@ -25,11 +36,14 @@
 			li {
 				a{
 				padding-left : 20px;
+				color:#c5c6c7;
+			
 				}
 			}
 
 			a {
 				width: 100%;
+				
 			}
 		} /* fin du sub-menu */
 

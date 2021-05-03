@@ -2,7 +2,6 @@
     font-family:$font__sitetitle;
     font-size: clamp(2rem, #{"-0.875rem + 8.333vw"}, 4rem);
     font-weight: bold;
-    color: black;
     margin-bottom: 0;
     a{
     text-decoration: none;
@@ -11,22 +10,28 @@
         font-family: $font__sitetitle;
         font-size: clamp(.8rem, #{"-0.875rem + 8.333vw"}, 3.5rem);
         font-weight: normal;
-        color: #8000ff;
+        color: $color__linksite-title;
         margin-top: 0;
     }
     
     
     .page-header{
         margin-top: 130px;
+        display: flex;
+        justify-content: center;
     
         .page-title{
-            font-size: 4rem;
-            color: #8000ff;
+           
+            display: none;
+            // font-size: 4rem;
+            //color: blue;
         }
     
         .archive-description{
-            font-size: 2rem;
-            color: black;
+          
+             font-size: 2rem;
+            color: #66fcf1;
+           
         }
     }
     

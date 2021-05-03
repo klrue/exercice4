@@ -3,7 +3,6 @@
     display:flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
     width:100vw;
     article{
         margin: 2%;
@@ -51,12 +50,19 @@
       
       /* Style the back side */
       .flip-card-back {
-        background-color:#8000ff;
+        background-color:#66fcf1;
         color: white;
        
             transform: rotateY(180deg);
            
-           
+           a:visited
+           {
+             color:gray;
+           }
+
+           a{
+            color:black;
+           }
            
         h1
         {

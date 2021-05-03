@@ -459,7 +459,7 @@ big {
 /* Elements
 --------------------------------------------- */
 body {
-  background: fff;
+  background: #0b0c10;
 }
 
 hr {
@@ -524,7 +524,7 @@ a {
 }
 
 a:visited {
-  color: #800080;
+  color: #66fcf1;
 }
 
 a:hover, a:focus, a:active {
@@ -560,15 +560,15 @@ a:hover, a:active {
 }
 
 .site-title a {
-  color: #0a2646;
+  color: #66fcf1;
 }
 
 .site-title a:visited {
-  color: #3b5292;
+  color: #66fcf1;
 }
 
 .site-title a:hover, .site-title a:focus, .site-title a:active {
-  color: #54b5e2;
+  color: #45a29e;
 }
 
 .site-title a:focus {
@@ -717,6 +717,14 @@ textarea {
   width: 100vw;
 }
 
+.main-navigation a:visited {
+  color: #c5c6c7;
+}
+
+.main-navigation a:visited a {
+  color: #c5c6c7;
+}
+
 .main-navigation ul {
   display: none;
   position: absolute;
@@ -724,7 +732,7 @@ textarea {
   list-style: none;
   margin: 0;
   padding-left: 0;
-  background-color: #000;
+  background-color: #0B0C10;
   text-align: left;
   z-index: 99999;
   /* fin du sub-menu */
@@ -742,6 +750,7 @@ textarea {
 
 .main-navigation ul ul li a {
   padding-left: 20px;
+  color: #c5c6c7;
 }
 
 .main-navigation ul ul a {
@@ -918,7 +927,7 @@ menu tablet
 .widget {
   margin: 0 0 1.5em;
   margin-top: 15vh;
-  color: #8000ff;
+  color: #66fcf1;
 }
 
 .widget select {
@@ -1122,7 +1131,7 @@ body.home::after {
 @media (min-width: 800px) {
   body.home::after {
     clip-path: circle(22.9% at 100% 0);
-    background-color: #8000ff;
+    background-color: #66fcf1;
   }
 }
 
@@ -1142,9 +1151,9 @@ body.home::after {
 #separateur {
   width: 100vw;
   height: 5vh;
-  margin-bottom: 5vh;
+  margin-top: 2vh;
   clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
-  background-color: #8000ff;
+  background-color: #1f2833;
 }
 
 /* --------------------------------------------------------------------------------------- 
@@ -1209,8 +1218,11 @@ Liste des blocs de cours par type_de_cours
 }
 
 .home .nouvelles section h2 {
-  background-color: #8000ff;
-  color: white;
+  color: #66fcf1;
+}
+
+.home .nouvelles section p {
+  color: #c5c6c7;
 }
 
 /* local carrousel
@@ -1252,18 +1264,15 @@ Liste des blocs de cours par type_de_cours
 
 /* local slider
 --------------------------------------------- */
-.carrousel-2 {
-  display: none;
-}
-
 @media (min-width: 800px) {
   .carrousel-2 {
     width: 300vw;
-    height: 30vh;
+    height: 40vh;
     display: flex;
     transition: transform .5s;
     transform: translate(0);
     flex-wrap: nowrap !important;
+    background-color: #0B0C10;
   }
 }
 
@@ -1271,7 +1280,16 @@ Liste des blocs de cours par type_de_cours
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50vw;
+  width: 90vw;
+}
+
+@media (min-width: 800px) {
+  .carrousel-2 .slide__conteneur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33vw;
+  }
 }
 
 .carrousel-2 .slide__conteneur .slide {
@@ -1310,11 +1328,11 @@ Liste des blocs de cours par type_de_cours
 .carrousel-2 .slide__conteneur .slide .slide__info a {
   font-size: 1.2rem;
   text-decoration: none;
-  color: white;
+  color: #66fcf1;
 }
 
 .carrousel-2 .slide__conteneur .slide:nth-of-type(1) {
-  background-color: #8000ff;
+  background-color: #1f2833;
 }
 
 .ctrl-carrousel {
@@ -1323,9 +1341,15 @@ Liste des blocs de cours par type_de_cours
   width: 100vw;
 }
 
+.ctrl-carrousel input {
+  width: 10px;
+  height: 10px;
+}
+
 .ctrl-carrousel .rad-carrousel {
   display: block;
   margin: .5rem .8rem .5rem .8rem;
+  width: 5vw;
 }
 
 .ctrl-carrousel .rad-carrousel:nth-of-type(4) {
@@ -1350,9 +1374,9 @@ Le bouton buger
 ----------------------------------------------------------------------------------------- */
 #burger {
   position: relative;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  background-color: #0B0C10;
   overflow: hidden;
 }
 
@@ -1365,17 +1389,17 @@ Le bouton buger
 }
 
 #burger div:nth-of-type(1) {
-  background-color: #8000ff;
+  background-color: #66fcf1;
   clip-path: polygon(0 20%, 100% 20%, 100% 30%, 0 30%);
 }
 
 #burger div:nth-of-type(2) {
-  background-color: #8000ff;
+  background-color: #66fcf1;
   clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
 }
 
 #burger div:nth-of-type(3) {
-  background-color: #8000ff;
+  background-color: #66fcf1;
   clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
 }
 
@@ -1387,13 +1411,13 @@ La barre du haut
     clip-path: polygon(0 20%, 100% 20%, 100% 30%, 0 30%);
   }
   100% {
-    clip-path: polygon(8% -8%, 108% 92%, 92% 108%, -8% 8%);
+    clip-path: polygon(5% -5%, 105% 95%, 95% 105%, -5% 5%);
   }
 }
 
 @keyframes fermeX1 {
   0% {
-    clip-path: polygon(8% -8%, 108% 92%, 92% 108%, -8% 8%);
+    clip-path: polygon(5% -5%, 105% 95%, 95% 105%, -5% 5%);
   }
   100% {
     clip-path: polygon(0 20%, 100% 20%, 100% 30%, 0 30%);
@@ -1416,7 +1440,7 @@ La barre du bas
     clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
   }
   100% {
-    clip-path: polygon(-8% 92%, 92% -8%, 108% 8%, 8% 108%);
+    clip-path: polygon(-5% 95%, 95% -5%, 105% 5%, 5% 105%);
   }
 }
 
@@ -1472,7 +1496,6 @@ La barre du millieu
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;
   width: 100vw;
   /* This container is needed to position the front and back side */
   /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -1521,9 +1544,17 @@ La barre du millieu
 }
 
 .galerie .flip-card-back {
-  background-color: #8000ff;
+  background-color: #66fcf1;
   color: white;
   transform: rotateY(180deg);
+}
+
+.galerie .flip-card-back a:visited {
+  color: gray;
+}
+
+.galerie .flip-card-back a {
+  color: black;
 }
 
 .galerie .flip-card-back h1 {
@@ -1541,7 +1572,6 @@ La barre du millieu
   font-family: "Montserrat", monospace;
   font-size: clamp(2rem, -0.875rem + 8.333vw, 4rem);
   font-weight: bold;
-  color: black;
   margin-bottom: 0;
 }
 
@@ -1553,33 +1583,30 @@ La barre du millieu
   font-family: "Montserrat", monospace;
   font-size: clamp(0.8rem, -0.875rem + 8.333vw, 3.5rem);
   font-weight: normal;
-  color: #8000ff;
+  color: #66fcf1;
   margin-top: 0;
 }
 
 .page-header {
   margin-top: 130px;
+  display: flex;
+  justify-content: center;
 }
 
 .page-header .page-title {
-  font-size: 4rem;
-  color: #8000ff;
+  display: none;
 }
 
 .page-header .archive-description {
   font-size: 2rem;
-  color: black;
+  color: #66fcf1;
 }
 
 /* local footer
 --------------------------------------------- */
-.site-footer {
-  display: none;
-}
-
 @media (min-width: 800px) {
   .site-footer {
-    background-color: #8000ff;
+    background-color: #66fcf1;
     display: flex;
     justify-content: center;
     width: 30%;
@@ -1587,21 +1614,21 @@ La barre du millieu
   }
 }
 
-.site-footer .widget-footer {
-  display: none;
-}
-
 @media (min-width: 800px) {
   .site-footer .widget-footer {
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: center;
     flex-direction: row;
-    display: flex;
-    background-color: white;
-    border: solid #8000ff;
+    background-color: #0b0c10;
     width: 60%;
     padding-right: 3vw;
     padding-left: 3vw;
   }
+}
+
+/* local formulaire
+--------------------------------------------- */
+.admin-rapide {
+  width: 70%;
+  margin: 2% 4% 2% 3%;
 }
 /*# sourceMappingURL=style.css.map */

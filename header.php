@@ -13,6 +13,7 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
+
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
@@ -44,11 +45,12 @@
 				<p class="site-description"><?php echo $theme4w4_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>
 		</div><!-- .site-branding -->
+	
+</div>
+				<!--<section class='carrousel'>
 		
-				<section class='carrousel'>
 		
-		
-		
+		 PREMIER SLIDER
 	<div>Bienvenue sur le labo 8
 	</div>
 	<div>
@@ -62,8 +64,10 @@
 	<article class="boutonsMenu">
 	<button id="un"></button>
 	<button id="deux"></button>
-	<button id="trois"></button>
-	</article>
+	<button id="trois"></button> 
+	
+
+	</article>-->
 	
 
 		<nav id="site-navigation" class="main-navigation">
@@ -82,4 +86,5 @@
 			);
 			?>
 		</nav><!-- #site-navigation -->
+		
 	</header><!-- #masthead -->

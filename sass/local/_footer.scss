@@ -1,13 +1,14 @@
 .site-footer{
    
    @include tablet {
-    background-color:#8000ff;
+    background-color:#66fcf1;
     display: flex;
     justify-content: center;
     width:30%;
     text-align: center;
    }
-    display: none;
+
+
     
   
     
@@ -15,17 +16,14 @@
         @include tablet
 
         {
-            justify-content: space-between;
-            flex-wrap: wrap;
+            justify-content: center;
             flex-direction: row;
-            display: flex;
-            background-color:white;
-            border:solid #8000ff;
+            background-color:#0b0c10;
             width:60%;
             padding-right: 3vw;
             padding-left: 3vw;
         }
-        display: none;
+        
 
       
       

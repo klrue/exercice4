@@ -39,26 +39,29 @@ get_header();
 				if ($tPropriété['typeCours'] != $precedent): 
 					if ("XXXXXX" != $precedent)	: ?>
 						</section>
-						<div id="separateur"></div>
-						<?php if (in_array($precedent, ['Web', 'Jeu', 'Spécifique', 'Image 2d/3d', 'Conception', 'Projet'])) : ?>
+						
+						<?php if (in_array($precedent, ['Web', 'Jeu', 'Spécifique', 'Image 2d/3d', 'Conception'])) : ?>
 							
 							
 							<section class="ctrl-carrousel">
 								<?php echo $chaine_bouton_radio;
 								$chaine_bouton_radio = '';
-								 ?>		
+								 ?>	
+								 	
 							</section>
+							<div id="separateur"></div>
 						<?php endif; ?>
 					<?php endif; ?>	
 					<h2><?php echo $tPropriété['typeCours'] ?></h2>
 					<section <?php echo class_composant($tPropriété['typeCours']) ?>>
 				<?php endif ?>	
 
-				<?php if (in_array($tPropriété['typeCours'], ['Web', 'Jeu', 'Spécifique', 'Image 2d/3d', 'Conception', 'Projet']) ) : 
+				<?php if (in_array($tPropriété['typeCours'], ['Web', 'Jeu', 'Spécifique', 'Image 2d/3d', 'Conception']) ) : 
 						get_template_part( 'template-parts/content', 'cours-carrousel' ); 
 						$chaine_bouton_radio .= '<input class="rad-carrousel"  type="radio" name="rad-'.$tPropriété['typeCours'].'">';
-						elseif ($tPropriété ['typeCours'] == 'Projet' ):
+						elseif ($tPropriété ['typeCours'] == 'Projets' ):
 							get_template_part( 'template-parts/content', 'galerie' ); 
+						
 
 				else :		
 						get_template_part( 'template-parts/content', 'cours-article' ); 
@@ -67,8 +70,20 @@ get_header();
 			endwhile;?>
 			</section> <!-- fin section cours -->
 		<?php endif; ?>
+		<?PHP if (current_user_can('administrator')) : ?>
+<!-- ///////////////////////////////////////////////////////////////////////////// 
+     Formulaire d'ajout d'un artcle de catégorie « Nouvelles »   -->
+            <section class="admin-rapide">
+                <h3>Ajouter un article de catégorie « Nouvelles »</h3>
+                <input type="text" name="title" placeholder="Titre">
+                <textarea name="content" placeholder="Contenu" ></textarea>
+                <button id='bout-rapide'>Créer une Nouvelle</button>
+            </section>
+<?php endif ?>
+
+		</section>
 			<section class="nouvelles">
-			<button id="bout_nouvelles">Afficher les 3 dernières nouvelles</button>
+			<!--<button id="bout_nouvelles">Afficher les 3 dernières nouvelles</button>-->
 			<section></section>
 			</section>
 
@@ -103,11 +118,12 @@ function convertirTableau(&$tPropriété)
 }
 
 function class_composant ($typeCours){
-	if(in_array($typeCours, ['Web', 'Jeu', 'Spécifique', 'Image 2d/3d', 'Conception', 'Projet'])){
+	if(in_array($typeCours, ['Web', 'Jeu', 'Spécifique', 'Image 2d/3d', 'Conception'])){
 	return 'class="carrousel-2"';
 		}
 	elseif($typeCours == 'Projets'){
 		return 'class="galerie';
+		
 		}
 	else{
 		return 'class="bloc';
