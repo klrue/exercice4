@@ -17,8 +17,8 @@
                let data = JSON.parse(maRequete.responseText);
                chaineResultat = '';
                for(const elm of data){
-                chaineResultat += '<h2>' + elm.title.rendered + '</h2>'
-                chaineResultat += elm.content.rendered
+                chaineResultat += '<h2>' + elm.title.rendered + '</h2>';
+                chaineResultat += elm.content.rendered;
                }
                nouvelles.innerHTML = chaineResultat;
             }
@@ -50,7 +50,7 @@
         //console.log(monArticle);
         let creerArticle = new XMLHttpRequest();
         creerArticle.open("POST", monObjJS.siteURL +'/wp-json/wp/v2/posts');
-        creerArticle.setRequestHeader("X-WP-Nonce","application/json;charset=UTF-8");
+        creerArticle.setRequestHeader("X-WP-Nonce", monObjJS.nonce);
         creerArticle.setRequestHeader("Content-Type","application/json;charset=UTF-8");
         creerArticle.send(JSON.stringify(monArticle));
         creerArticle.onreadystatechange = function()

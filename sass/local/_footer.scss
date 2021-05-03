@@ -1,29 +1,31 @@
 .site-footer{
    
-   @include tablet {
-    background-color:#66fcf1;
-    display: flex;
-    justify-content: center;
-    width:30%;
-    text-align: center;
-   }
+display: flex;
+
+ 
+ background-color: #1f2833;
+ margin-right: 40px;
+ color:white;
+   
+ border-radius: 20px;
 
 
-    
-  
-    
     .widget-footer{
         @include tablet
 
         {
-            justify-content: center;
-            flex-direction: row;
-            background-color:#0b0c10;
-            width:60%;
-            padding-right: 3vw;
-            padding-left: 3vw;
+           display: flex;
+           flex-direction: row;
+            justify-content: space-around;
+            width:100%;
+            
+          
         }
-        
+      
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
 
       
       

@@ -927,7 +927,6 @@ menu tablet
 .widget {
   margin: 0 0 1.5em;
   margin-top: 15vh;
-  color: #66fcf1;
 }
 
 .widget select {
@@ -1281,6 +1280,7 @@ Liste des blocs de cours par type_de_cours
   justify-content: center;
   align-items: center;
   width: 90vw;
+  margin: 5vw;
 }
 
 @media (min-width: 800px) {
@@ -1289,6 +1289,7 @@ Liste des blocs de cours par type_de_cours
     justify-content: center;
     align-items: center;
     width: 33vw;
+    margin: 0vw;
   }
 }
 
@@ -1604,24 +1605,27 @@ La barre du millieu
 
 /* local footer
 --------------------------------------------- */
-@media (min-width: 800px) {
-  .site-footer {
-    background-color: #66fcf1;
-    display: flex;
-    justify-content: center;
-    width: 30%;
-    text-align: center;
-  }
+.site-footer {
+  display: flex;
+  background-color: #1f2833;
+  margin-right: 40px;
+  color: white;
+  border-radius: 20px;
+}
+
+.site-footer .widget-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
 }
 
 @media (min-width: 800px) {
   .site-footer .widget-footer {
-    justify-content: center;
+    display: flex;
     flex-direction: row;
-    background-color: #0b0c10;
-    width: 60%;
-    padding-right: 3vw;
-    padding-left: 3vw;
+    justify-content: space-around;
+    width: 100%;
   }
 }
 
@@ -1630,5 +1634,9 @@ La barre du millieu
 .admin-rapide {
   width: 70%;
   margin: 2% 4% 2% 3%;
+}
+
+#bout_nouvelles {
+  width: 50%;
 }
 /*# sourceMappingURL=style.css.map */
